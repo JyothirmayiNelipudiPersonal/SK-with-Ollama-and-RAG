@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	 <NoWarn>SKEXP0001</NoWarn>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>SK_with_Ollama_and_RAG</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.68.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Ollama" Version="1.68.0-alpha" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.Postgres" Version="1.51.0-preview" />
+    <PackageReference Include="Npgsql" Version="10.0.1" />
+    <PackageReference Include="Pgvector" Version="0.3.2" />
+    <PackageReference Include="UglyToad.PdfPig" Version="1.7.0-custom-5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.SemanticKernel.Connectors.Ollama">
+      <HintPath>..\..\..\..\.nuget\packages\microsoft.semantickernel.connectors.ollama\1.68.0-alpha\lib\net8.0\Microsoft.SemanticKernel.Connectors.Ollama.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+	
+		
+	
+
+
+</Project>
